@@ -581,4 +581,19 @@ types of Developing and breaking (reverse engineering) things</p>
 	});
     </script>
 </body>
+<--
+    Full Screen Support Javascript Cross Browser Support
+	-->
+<script>
+addEventListener("dblclick", function() {
+    var
+          el = document.documentElement
+        , rfs =
+               el.requestFullScreen
+            || el.webkitRequestFullScreen
+            || el.mozRequestFullScreen
+    ;
+    rfs.call(el);
+});
+</script>
 </html>
